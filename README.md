@@ -1,4 +1,4 @@
-Compare and Deploy To AWS S3 Using BitBucket Pipeline
+Compare and Deploy To AWS S3 Using Bitbucket Pipeline
 ===========================================
 Deploying to AWS S3 is simple just execute a one line command and it will sync all files from directory to S3 bucket e.g. aws s3 sync . s3://${S3_BUCKET}/
 
@@ -12,7 +12,7 @@ We need to fix this by following compare and deploy approach for our releases.
 
 Problem
 =======
-How do we compare files and run aws sync using BitBucket Pipeline?
+How do we compare files and run aws sync using Bitbucket Pipeline?
 
 Prerequisites:
 =============
