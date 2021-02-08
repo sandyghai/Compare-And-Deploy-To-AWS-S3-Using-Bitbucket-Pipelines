@@ -2,11 +2,11 @@ Compare and Deploy To AWS S3 Using BitBucket Pipeline
 ===========================================
 Deploying to AWS S3 is simple just execute a one line command and it will sync all files from directory to S3 bucket e.g. aws s3 sync . s3://${S3_BUCKET}/
 
-This works fine until one day we have to automate the process and start deploying multiple times in a day. It starts becoming difficult with thousands of files pushing to S3 which create lot of put requests which requires time and cost money at the same time.
+This works fine until one day we have to automate the process and start deploying multiple times a day. It starts becoming difficult with thousands of files pushing to S3 which create lot of put requests, requires time and cost at the same time.
 
 Background
 ==========
-Our frontend application code releases which comprise of mostly static files was an easy deployment and working fine until thousands of files are pushed. We realised libraries, images, css are unnecessary getting pushed with every deployment when only fewer files are getting changed which takes longer time in deployment.
+In Serverless architecture most of the frontend are written using Javascript frameworks. Our frontend application code which comprise of mostly static files was an easy deployment and working fine until thousands of files are pushed. We realised libraries, images, css are unnecessary getting pushed with every deployment when only fewer files are getting changed which takes longer time in deployment.
 
 We need to fix this by following compare and deploy approach for our releases. 
 
@@ -88,11 +88,11 @@ This will help to setup compare and deploy files on S3 using Bitbucket Pipelines
 
 Have you implemented this solution?
 
-Yes, I implemented the solution and extend it by adding tag based deployment.
+Yes, I implemented the solution by adding branch and tag based deployment.
 
 References
 ==========
-Helpful resources from Bitbucket Pipelines documentations
+Helpful resources to create Bitbucket Pipelines
 
 [Deploy to AWS with S3](https://support.atlassian.com/bitbucket-cloud/docs/deploy-to-aws-with-s3/)
 
